@@ -4,6 +4,6 @@
 echo "Starting Dummy Server on Port 8080..."
 python3 -m http.server 8080 &
 
-# 2. Otohits start karna (Ab ye direct Render Environment se key utha lega)
+# 2. Otohits start karna aur explicitly Key pass karna
 echo "Starting Otohits Viewer..."
-./otohits-app
+./otohits-app -key=$APPLICATION_KEY
