@@ -4,6 +4,6 @@
 echo "Starting Dummy Server on Port 8080..."
 python3 -m http.server 8080 &
 
-# 2. Otohits start karna aur explicitly Key pass karna
+# 2. Otohits start karna (Pipe ka use karke automatically key input karna)
 echo "Starting Otohits Viewer..."
-./otohits-app -key=$APPLICATION_KEY
+echo "$APPLICATION_KEY" | ./otohits-app
